@@ -46,9 +46,9 @@ This is a minimalistic blogging platform built using Django. The platform allows
 ## Screenshots
 
 ### Home Page
-![Home Page](https://github.com/yourusername/your-django-blog/blob/main/screenshots/home_page.png)
+![Home Page](Blog_site/screen-shots/index.jpg)
 
 ### Profile Page
-![Profile Page](https://github.com/yourusername/your-django-blog/blob/main/screenshots/profile_page.png)
+![Profile Page](Blog_site/screen-shots/profile.png)
 
 

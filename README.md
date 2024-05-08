@@ -42,3 +42,13 @@ This is a minimalistic blogging platform built using Django. The platform allows
 2. Create, edit, or delete your blog posts.
 3. View all blog posts on the platform.
 
+
+## Screenshots
+
+### Home Page
+![Home Page](https://github.com/yourusername/your-django-blog/blob/main/screenshots/home_page.png)
+
+### Profile Page
+![Profile Page](https://github.com/yourusername/your-django-blog/blob/main/screenshots/profile_page.png)
+
+

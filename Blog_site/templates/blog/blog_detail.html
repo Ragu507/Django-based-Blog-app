@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="mt-4 text-center">
+    <h1 class="text-3xl text-teal-500 font-extrabold">Blog-Detail</h1>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1">
+
+    {% if blog %}
+                <div class="flex max-md:flex-col bg-white shadow-lg rounded-lg p-5">
+                    <div class="flex-1">
+                        <img src="{{ blog.img.url }}" alt="" class="">
+                    </div>
+                    <div class="flex-[2] bg-gray-800 text-white p-2 rounded-md">
+                        <h1>{{ blog.title }}</h1>
+                        <p>{{ blog.description }}</p>
+                        <div class="flex text-gray-400 justify-between mt-4 px-4">
+                            <p><strong>Author:</strong>{{blog.author}}</p>
+                            <p>{{blog.time_stamp.date}}</p>
+                        </div> 
+                    </div>  
+                                  
+                </div>
+    {% else %}
+        <h1>Sorry, No Blogs Available!!!</h1>
+    {% endif %}
+</div>
+{% endblock %}

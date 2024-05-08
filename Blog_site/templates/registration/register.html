@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="lg:max-w-xl max-w-md mx-auto bg-white shadow-lg rounded-lg p-5">
+    <h2 class="text-center text-xl font-bold">User Registration</h2>
+    <form action="" method="post" class="form-control">
+        {% csrf_token %}
+        {% if form.errors %}
+        <div class="alert alert-error" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <strong>Error:Please correct the following errors.</strong> 
+        </div>
+        {% endif %}
+        <div class="form-control">
+            <label for="username" class="label text-lg font-semibold">Username</label>
+            <input type="text" name="username" id="username" class="input input-primary">
+            {{form.username.help_text}}
+            {% if form.errors.username %}
+            <div class="text-red-500">{{ form.errors.username }}</div>
+            {% endif %}
+        </div>
+        <div class="form-control">
+            <label for="password1" class="label text-lg font-semibold">Password</label>
+            <input type="password" name="password1" id="password1" class="input input-primary">
+            {{form.password1.help_text}}
+            {% if form.errors.password1 %}
+            <div class="text-red-500">{{ form.errors.password1 }}</div>
+            {% endif %}
+        </div>
+        <div class="form-control">
+            <label for="password2" class="label text-lg font-semibold">Confirm Password</label>
+            <input type="password" name="password2" id="password2" class="input input-primary">
+            {{form.password2.help_text}}
+            {% if form.errors.password2 %}
+            <div class="text-red-500">{{ form.errors.password2 }}</div>
+            {% endif %}
+        </div>
+        <div class="mt-4">
+            <button type="submit" class="btn btn-block btn-primary text-xl font-bold text-white">Register</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

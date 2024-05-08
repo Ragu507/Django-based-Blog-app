@@ -19,7 +19,7 @@ This is a minimalistic blogging platform built using Django. The platform allows
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-django-blog.git
+   git clone https://github.com/Ragu507/Django-based-Blog-app.git
 
 2. Install dependencies:
    
@@ -31,14 +31,14 @@ This is a minimalistic blogging platform built using Django. The platform allows
     ```bash
     python manage.py migrate
     
-4.Run the development server:
+4. Run the development server:
 
     ```bash
     python manage.py runserver
 
 ## Usage
 
-1.Register for an account or log in if you already have one.
-2.Create, edit, or delete your blog posts.
-3.View all blog posts on the platform.
+1. Register for an account or log in if you already have one.
+2. Create, edit, or delete your blog posts.
+3. View all blog posts on the platform.
 
